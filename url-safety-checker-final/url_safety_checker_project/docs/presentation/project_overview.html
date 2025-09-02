@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Project Overview</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+      }
+      .header {
+        margin-bottom: 30px;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .text-content {
+        flex: 1;
+        padding-right: 30px;
+      }
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .concept-image {
+        max-width: 500px;
+        max-height: 400px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .point {
+        margin-bottom: 20px;
+        font-size: 20px;
+        display: flex;
+        align-items: flex-start;
+      }
+      .point-icon {
+        color: #3498db;
+        margin-right: 10px;
+        margin-top: 4px;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">
+        <h1 class="title">Project Overview</h1>
+      </div>
+      
+      <div class="content-container">
+        <div class="text-content">
+          <div class="point">
+            <span class="point-icon"><i class="fas fa-shield-alt"></i></span>
+            <span><strong>URL Safety Checker</strong> is a web application designed to verify the safety of URLs before users visit potentially harmful websites.</span>
+          </div>
+          
+          <div class="point">
+            <span class="point-icon"><i class="fas fa-exclamation-triangle"></i></span>
+            <span><strong>Problem:</strong> Malicious URLs can lead to phishing attacks, malware infections, and data theft, posing significant security risks to internet users.</span>
+          </div>
+          
+          <div class="point">
+            <span class="point-icon"><i class="fas fa-check-circle"></i></span>
+            <span><strong>Solution:</strong> Integrates multiple security APIs (Google Safe Browsing and VirusTotal) to provide comprehensive threat detection with a user-friendly interface.</span>
+          </div>
+          
+          <div class="point">
+            <span class="point-icon"><i class="fas fa-users"></i></span>
+            <span><strong>Target Users:</strong> General internet users, security-conscious individuals, educational institutions, and small businesses seeking to enhance their web browsing safety.</span>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="/home/ubuntu/url_safety_checker_project/docs/security-concept.png" alt="Web Security Concept" class="concept-image">
+        </div>
+      </div>
+      
+      <div class="footer">
+        <span>2 / 10</span>
+      </div>
+    </div>
+  </body>
+</html>
+

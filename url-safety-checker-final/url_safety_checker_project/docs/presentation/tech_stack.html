@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Technology Stack</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+      }
+      .header {
+        margin-bottom: 30px;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .tech-categories {
+        flex: 1;
+        padding-right: 30px;
+      }
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .architecture-image {
+        max-width: 550px;
+        max-height: 450px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .tech-category {
+        margin-bottom: 20px;
+      }
+      .category-title {
+        font-size: 22px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .category-icon {
+        color: #3498db;
+        margin-right: 10px;
+      }
+      .tech-list {
+        margin-left: 35px;
+      }
+      .tech-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+      .tech-name {
+        font-weight: 500;
+        margin-right: 8px;
+      }
+      .tech-description {
+        color: #555;
+        font-size: 16px;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">
+        <h1 class="title">Technology Stack</h1>
+      </div>
+      
+      <div class="content-container">
+        <div class="tech-categories">
+          <div class="tech-category">
+            <div class="category-title">
+              <span class="category-icon"><i class="fas fa-server"></i></span>
+              <span>Backend</span>
+            </div>
+            <div class="tech-list">
+              <div class="tech-item">
+                <span class="tech-name">Flask 2.3.2:</span>
+                <span class="tech-description">Python web framework for API development</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Flask-CORS 4.0.0:</span>
+                <span class="tech-description">Cross-Origin Resource Sharing support</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Requests 2.31.0:</span>
+                <span class="tech-description">HTTP library for API communications</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Python-dotenv 1.0.0:</span>
+                <span class="tech-description">Environment variable management</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <div class="category-title">
+              <span class="category-icon"><i class="fas fa-desktop"></i></span>
+              <span>Frontend</span>
+            </div>
+            <div class="tech-list">
+              <div class="tech-item">
+                <span class="tech-name">HTML5:</span>
+                <span class="tech-description">Semantic markup with accessibility</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">TailwindCSS 3.3.0:</span>
+                <span class="tech-description">Utility-first CSS framework</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">JavaScript (ES6+):</span>
+                <span class="tech-description">Modern features for interactivity</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">Font Awesome 6.4.0:</span>
+                <span class="tech-description">Professional icon library</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <div class="category-title">
+              <span class="category-icon"><i class="fas fa-plug"></i></span>
+              <span>APIs & Services</span>
+            </div>
+            <div class="tech-list">
+              <div class="tech-item">
+                <span class="tech-name">Google Safe Browsing API v4:</span>
+                <span class="tech-description">Threat detection service</span>
+              </div>
+              <div class="tech-item">
+                <span class="tech-name">VirusTotal API v3:</span>
+                <span class="tech-description">Malware and URL analysis platform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="/home/ubuntu/url_safety_checker_project/docs/architecture.png" alt="System Architecture Diagram" class="architecture-image">
+        </div>
+      </div>
+      
+      <div class="footer">
+        <span>4 / 10</span>
+      </div>
+    </div>
+  </body>
+</html>
+

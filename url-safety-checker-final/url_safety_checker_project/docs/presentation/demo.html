@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Live Demo</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+      }
+      .header {
+        margin-bottom: 30px;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .demo-instructions {
+        flex: 1;
+        padding-right: 30px;
+      }
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .interface-image {
+        max-width: 550px;
+        max-height: 450px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .intro {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #555;
+      }
+      .demo-step {
+        margin-bottom: 20px;
+        display: flex;
+      }
+      .step-number {
+        width: 30px;
+        height: 30px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+        font-weight: 600;
+      }
+      .step-content {
+        flex: 1;
+      }
+      .step-title {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      .step-description {
+        color: #555;
+        font-size: 18px;
+      }
+      .example-url {
+        font-family: monospace;
+        background-color: #f1f1f1;
+        padding: 3px 6px;
+        border-radius: 4px;
+        color: #333;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">
+        <h1 class="title">Live Demo</h1>
+      </div>
+      
+      <div class="content-container">
+        <div class="demo-instructions">
+          <p class="intro">Follow these steps to demonstrate the URL Safety Checker application:</p>
+          
+          <div class="demo-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-title">Launch the Application</div>
+              <p class="step-description">Start the Flask backend server and open the frontend in a browser</p>
+            </div>
+          </div>
+          
+          <div class="demo-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-title">Enter a Safe URL</div>
+              <p class="step-description">Try a known safe URL like <span class="example-url">https://google.com</span> or <span class="example-url">https://github.com</span></p>
+            </div>
+          </div>
+          
+          <div class="demo-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-title">Test with a Suspicious URL</div>
+              <p class="step-description">Use Google's test URL: <span class="example-url">http://malware.testing.google.test/testing/malware/</span></p>
+            </div>
+          </div>
+          
+          <div class="demo-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <div class="step-title">Explain the Results</div>
+              <p class="step-description">Highlight the status classification, threat details, and technical information provided</p>
+            </div>
+          </div>
+          
+          <div class="demo-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <div class="step-title">Demonstrate Error Handling</div>
+              <p class="step-description">Show how the application handles invalid URLs or API errors gracefully</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="/home/ubuntu/url_safety_checker_project/screenshots/main-interface.png" alt="URL Safety Checker Interface" class="interface-image">
+        </div>
+      </div>
+      
+      <div class="footer">
+        <span>8 / 10</span>
+      </div>
+    </div>
+  </body>
+</html>
+

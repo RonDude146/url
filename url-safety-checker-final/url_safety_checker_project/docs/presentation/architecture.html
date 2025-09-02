@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>System Architecture</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+      }
+      .header {
+        margin-bottom: 30px;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .text-content {
+        flex: 1;
+        padding-right: 30px;
+      }
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .architecture-image {
+        max-width: 550px;
+        max-height: 450px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .architecture-layer {
+        margin-bottom: 20px;
+        padding-left: 15px;
+        border-left: 4px solid #3498db;
+      }
+      .layer-title {
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+      }
+      .layer-icon {
+        color: #3498db;
+        margin-right: 10px;
+      }
+      .layer-description {
+        font-size: 18px;
+        color: #555;
+        margin-left: 28px;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">
+        <h1 class="title">System Architecture</h1>
+      </div>
+      
+      <div class="content-container">
+        <div class="text-content">
+          <div class="architecture-layer">
+            <div class="layer-title">
+              <span class="layer-icon"><i class="fas fa-desktop"></i></span>
+              <span>Frontend Layer</span>
+            </div>
+            <p class="layer-description">HTML5/CSS3/JavaScript with TailwindCSS for responsive design and user interactions</p>
+          </div>
+          
+          <div class="architecture-layer">
+            <div class="layer-title">
+              <span class="layer-icon"><i class="fas fa-server"></i></span>
+              <span>Backend Layer</span>
+            </div>
+            <p class="layer-description">Flask REST API with CORS support, request validation, and result classification</p>
+          </div>
+          
+          <div class="architecture-layer">
+            <div class="layer-title">
+              <span class="layer-icon"><i class="fas fa-plug"></i></span>
+              <span>Integration Layer</span>
+            </div>
+            <p class="layer-description">Service modules for Google Safe Browsing and VirusTotal APIs with error handling</p>
+          </div>
+          
+          <div class="architecture-layer">
+            <div class="layer-title">
+              <span class="layer-icon"><i class="fas fa-shield-alt"></i></span>
+              <span>Security Considerations</span>
+            </div>
+            <p class="layer-description">API key protection, input validation, secure error handling, and rate limiting</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="/home/ubuntu/url_safety_checker_project/docs/architecture.png" alt="System Architecture Diagram" class="architecture-image">
+        </div>
+      </div>
+      
+      <div class="footer">
+        <span>5 / 10</span>
+      </div>
+    </div>
+  </body>
+</html>
+

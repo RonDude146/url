@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Application Workflow</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+      }
+      .header {
+        margin-bottom: 30px;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .workflow-steps {
+        flex: 1;
+        padding-right: 30px;
+      }
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .workflow-image {
+        max-width: 550px;
+        max-height: 500px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .step {
+        margin-bottom: 20px;
+        font-size: 20px;
+        display: flex;
+      }
+      .step-number {
+        width: 30px;
+        height: 30px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+      .step-content {
+        flex: 1;
+      }
+      .step-title {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .step-description {
+        font-size: 18px;
+        color: #555;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">
+        <h1 class="title">Application Workflow</h1>
+      </div>
+      
+      <div class="content-container">
+        <div class="workflow-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-title">URL Input & Validation</div>
+              <div class="step-description">User enters URL, system validates format and normalizes by adding protocol if missing</div>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-title">Parallel API Calls</div>
+              <div class="step-description">System simultaneously queries Google Safe Browsing and VirusTotal APIs for comprehensive analysis</div>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-title">Result Classification</div>
+              <div class="step-description">Responses are aggregated and classified into four categories: Safe, Suspicious, Malicious, or Unknown</div>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <div class="step-title">Result Display</div>
+              <div class="step-description">User interface updates with color-coded status, reason, and detailed technical information</div>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <div class="step-title">Error Handling</div>
+              <div class="step-description">System gracefully handles API timeouts, network errors, and invalid inputs with appropriate user feedback</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="/home/ubuntu/url_safety_checker_project/docs/workflow.png" alt="URL Safety Checker Workflow Diagram" class="workflow-image">
+        </div>
+      </div>
+      
+      <div class="footer">
+        <span>6 / 10</span>
+      </div>
+    </div>
+  </body>
+</html>
+

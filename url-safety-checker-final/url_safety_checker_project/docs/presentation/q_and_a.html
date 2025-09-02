@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Questions & Thank You</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+      }
+      .header {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+      .thank-you {
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .questions-section {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        padding: 30px;
+        width: 80%;
+        margin-bottom: 40px;
+      }
+      .section-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .section-icon {
+        margin-right: 10px;
+      }
+      .question-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .question-item {
+        width: 48%;
+        margin-bottom: 15px;
+        font-size: 18px;
+        display: flex;
+        align-items: flex-start;
+      }
+      .question-icon {
+        color: #ffffff;
+        margin-right: 10px;
+        margin-top: 4px;
+      }
+      .contact-info {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .contact-item {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      .contact-icon {
+        margin-right: 8px;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">
+        <h1 class="title">Questions & Thank You</h1>
+      </div>
+      
+      <div class="content-container">
+        <h2 class="thank-you">Thank You!</h2>
+        
+        <div class="questions-section">
+          <div class="section-title">
+            <span class="section-icon"><i class="fas fa-question-circle"></i></span>
+            <span>Discussion Points</span>
+          </div>
+          
+          <div class="question-list">
+            <div class="question-item">
+              <span class="question-icon"><i class="fas fa-angle-right"></i></span>
+              <span>How could the application be extended to include additional security APIs?</span>
+            </div>
+            
+            <div class="question-item">
+              <span class="question-icon"><i class="fas fa-angle-right"></i></span>
+              <span>What improvements could be made to enhance the user experience?</span>
+            </div>
+            
+            <div class="question-item">
+              <span class="question-icon"><i class="fas fa-angle-right"></i></span>
+              <span>How would you implement caching to improve performance?</span>
+            </div>
+            
+            <div class="question-item">
+              <span class="question-icon"><i class="fas fa-angle-right"></i></span>
+              <span>What security considerations should be addressed for production?</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+            <span>contact@example.com</span>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-icon"><i class="fab fa-github"></i></span>
+            <span>github.com/url-safety-checker</span>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-icon"><i class="fas fa-globe"></i></span>
+            <span>url-safety-checker.example.com</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <span>10 / 10</span>
+      </div>
+    </div>
+  </body>
+</html>
+

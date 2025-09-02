@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Key Features</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+      }
+      .header {
+        margin-bottom: 30px;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .features-list {
+        flex: 1;
+        padding-right: 30px;
+      }
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .interface-image {
+        max-width: 550px;
+        max-height: 450px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .feature {
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+      .feature-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+      .feature-icon {
+        width: 36px;
+        height: 36px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+      }
+      .feature-title {
+        font-weight: 600;
+        font-size: 22px;
+      }
+      .feature-description {
+        margin-left: 48px;
+        color: #555;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">
+        <h1 class="title">Key Features</h1>
+      </div>
+      
+      <div class="content-container">
+        <div class="features-list">
+          <div class="feature">
+            <div class="feature-header">
+              <div class="feature-icon">
+                <i class="fas fa-search-plus"></i>
+              </div>
+              <span class="feature-title">Multi-Service Analysis</span>
+            </div>
+            <p class="feature-description">Integrates Google Safe Browsing and VirusTotal APIs for comprehensive threat detection</p>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-header">
+              <div class="feature-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <span class="feature-title">Real-Time Scanning</span>
+            </div>
+            <p class="feature-description">Instant URL analysis with clear status classification (Safe, Suspicious, Malicious, Unknown)</p>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-header">
+              <div class="feature-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <span class="feature-title">Detailed Reporting</span>
+            </div>
+            <p class="feature-description">Comprehensive scan results with technical details from multiple security services</p>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-header">
+              <div class="feature-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <span class="feature-title">Modern UI/UX</span>
+            </div>
+            <p class="feature-description">Responsive design with intuitive interface, interactive elements, and clear visual feedback</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="/home/ubuntu/url_safety_checker_project/screenshots/main-interface.png" alt="URL Safety Checker Interface" class="interface-image">
+        </div>
+      </div>
+      
+      <div class="footer">
+        <span>3 / 10</span>
+      </div>
+    </div>
+  </body>
+</html>
+
