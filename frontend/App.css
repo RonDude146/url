@@ -99,7 +99,7 @@
   --neutral-fg: #f8fafc;
 }
 body {
-  background: var(--gradient-primary); /* use the gradient you defined */
+   background: var(--gradient-primary) !important;
   min-height: 100vh;                   /* make it cover the full viewport */
   margin: 0;                           /* remove default body margin */
   font-family: var(--font-body);       /* optional: use your body font */
